@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b345192d77107a84e90802e403212d19
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - cameraJ1: {instanceID: 0}
+  - cameraJ2: {instanceID: 0}
+  - BDDgame: {fileID: 1062465833996885105, guid: ba87f0fc34925c442a29d3a488413f50,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

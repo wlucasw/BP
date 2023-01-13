@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: c83d81fd8255b8a48afb8e078c2d92dd
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - J1: {instanceID: 0}
+  - J2: {instanceID: 0}
+  - nbBalle: {instanceID: 0}
+  - engage: {instanceID: 0}
+  - emptyBDD: {fileID: 986593851357135380, guid: 1c59bd5838c078e41be225d058f34f98,
+      type: 3}
+  - BO_T: {fileID: 2944513095126951793, guid: 546fbd21972348046aad196cbe3333ec, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
