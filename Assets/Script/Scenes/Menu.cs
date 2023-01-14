@@ -24,7 +24,7 @@ public class Menu : MonoBehaviour
     {
         BDD.BO = BDD.AddBO(J1.text, J2.text, engage.text, int.Parse(nbBalle.text));
         BDD.Game = BDD.AddMa(BDD.BO);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("Game");
         BDDG.GetComponent<NoteScore>().BO = BDD.BO;
         BDDG.GetComponent<NoteScore>().Game = BDD.Game;
         BDDG.GetComponent<NoteScore>().balleT = int.Parse(nbBalle.text);
@@ -38,7 +38,7 @@ public class Menu : MonoBehaviour
     public void PlayNewGame()
     {
         BDD.Game = BDD.AddMa(BDD.BO);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Game");
         BDDG.GetComponent<NoteScore>().BO = BDD.BO;
         BDDG.GetComponent<NoteScore>().Game = BDD.Game;
         BDDG.GetComponent<NoteScore>().balleT = BDD.RintSQl("Select \"nbBtour\" From \"BO\" Where \"ID\" = "+ BDD.BO);

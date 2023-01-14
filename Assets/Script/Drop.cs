@@ -6,15 +6,9 @@ using TMPro;
 
 public class Drop : MonoBehaviour
 {
-    public TMP_Text TextBox;
     public TMP_Dropdown drop;
     public GameObject emptyBDD;
     ConnectBDD BDD;
-    void DropdownItemSelected(TMP_Dropdown dropdown)
-    {
-        int index = dropdown.value;
-        TextBox.text = dropdown.options[index].text;            
-    }
 
     private void Start()
     {
@@ -32,9 +26,5 @@ public class Drop : MonoBehaviour
         {
             dropdwown.options.Add(new TMP_Dropdown.OptionData() { text = item });
         }
-
-        DropdownItemSelected(dropdwown);
-
-        dropdwown.onValueChanged.AddListener(delegate { DropdownItemSelected(dropdwown); });
     }
 }

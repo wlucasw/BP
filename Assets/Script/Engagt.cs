@@ -9,15 +9,6 @@ public class Engagt : MonoBehaviour
     public TMP_Text J1;
     public TMP_Text J2;
     public TMP_Dropdown engagt;
-    public TMP_Text TextBox;
-
-    void DropdownItemSelected(TMP_Dropdown dropdown)
-    {
-        int index = dropdown.value;
-
-        TextBox.text = dropdown.options[index].text;
-
-    }
 
     // Start is called before the first frame update
     void Start()
@@ -35,10 +26,6 @@ public class Engagt : MonoBehaviour
         {
             dropdwown.options.Add(new TMP_Dropdown.OptionData() { text = item });
         }
-
-        DropdownItemSelected(dropdwown);
-
-        dropdwown.onValueChanged.AddListener(delegate { DropdownItemSelected(dropdwown); });
     }
 
     // Update is called once per frame

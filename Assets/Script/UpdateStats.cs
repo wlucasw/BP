@@ -6,8 +6,14 @@ using TMPro;
 public class UpdateStats : MonoBehaviour
 {
     public GameObject BDDm;
+    public TMP_Text playerToUpdate;
     ConnectBDD BDD;
     public TMP_Text Mj, BOj, BOWr, MWr,Pre;
+
+    public void UpdateStatsInternal()
+    {
+        UpdateS(playerToUpdate.text);
+    }
 
     public void UpdateS(string J)
     {
