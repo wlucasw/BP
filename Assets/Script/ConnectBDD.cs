@@ -30,7 +30,7 @@ public class ConnectBDD : MonoBehaviour
         dbcmd = null;
         dbcon.Close();
         dbcon = null;
-        Debug.Log("END");
+        Debug.Log("close");
     }
     
     //Outils généraux :
@@ -418,6 +418,10 @@ public class ConnectBDD : MonoBehaviour
     {
         string Condid = "in ( ";
         List<int> games = RLintSQl("Select \"Matchs\".\"ID\"  From \"BO\" Join \"Matchs\" ON \"BO\"=\"BO\".\"ID\"  Where \"J1\"=" + IDj);
+        if(games.Count == 0)
+        {
+            return "in (-1)";
+        }
         foreach (int g in games)
         {
             Condid += g+",";
@@ -429,6 +433,10 @@ public class ConnectBDD : MonoBehaviour
     {
         string Condid = "in (";
         List<int> games = RLintSQl("Select \"Matchs\".\"ID\"  From \"BO\" Join \"Matchs\" ON \"BO\"=\"BO\".\"ID\"  Where \"J2\"=" + IDj);
+        if (games.Count == 0)
+        {
+            return "in (-1)";
+        }
         foreach (int g in games)
         {
             Condid += g + ",";
@@ -529,7 +537,6 @@ public class ConnectBDD : MonoBehaviour
 
     public int Get_BO(int game)
     {
-        Debug.Log("here !");
         return (RintSQl("Select \"BO\" From \"Matchs\" WHERE \"ID\" = "+game));
     }
 

@@ -603,6 +603,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 438
       objectReference: {fileID: 0}
+    - target: {fileID: 3180694108282468809, guid: a6932f50836558d4c9e2250a261eb32d,
+        type: 3}
+      propertyPath: emptyBDD
+      value: 
+      objectReference: {fileID: 1323919184}
     - target: {fileID: 3387752667778958490, guid: a6932f50836558d4c9e2250a261eb32d,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -728,6 +733,11 @@ PrefabInstance:
       propertyPath: TextBox
       value: 
       objectReference: {fileID: 1869689606}
+    - target: {fileID: 5280824232825837377, guid: a6932f50836558d4c9e2250a261eb32d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5364828022419434813, guid: a6932f50836558d4c9e2250a261eb32d,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -837,7 +847,7 @@ PrefabInstance:
     - target: {fileID: 6241661990433317132, guid: a6932f50836558d4c9e2250a261eb32d,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6241661990433317134, guid: a6932f50836558d4c9e2250a261eb32d,
         type: 3}
@@ -1235,5 +1245,6 @@ PrefabInstance:
       value: -429
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 3180694108282468809, guid: a6932f50836558d4c9e2250a261eb32d, type: 3}
+    - {fileID: 0}
+    - {fileID: 5280824232825837377, guid: a6932f50836558d4c9e2250a261eb32d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a6932f50836558d4c9e2250a261eb32d, type: 3}
